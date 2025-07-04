@@ -162,7 +162,7 @@ main {
 
 .project-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
   gap: 1.5rem;
 }
 
@@ -199,6 +199,7 @@ main {
   font-weight: 600;
   text-decoration: none;
   align-self: flex-start;
+  margin-right: 1rem;
   transition: color 0.3s ease;
 }
 
@@ -221,37 +222,19 @@ main {
   padding-bottom: 0.3rem;
 }
 
-.contact form {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
+.contact p {
+  font-size: 1.1rem;
+  color: #374151;
+  margin: 0.5rem 0;
 }
 
-.contact label {
-  margin-bottom: 0.5rem;
-  font-weight: 600;
+.contact a {
+  color: #2563eb;
+  text-decoration: none;
 }
 
-.contact input,
-.contact textarea {
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-  resize: vertical;
-}
-
-.contact input:focus,
-.contact textarea:focus {
-  outline: none;
-  border-color: #2563eb;
-  box-shadow: 0 0 5px #2563eb;
-}
-
-.contact button {
-  width: 150px;
-  align-self: flex-start;
+.contact a:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
