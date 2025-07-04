@@ -1,52 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Dustin Jones — Developer Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dustin Jones — Frontend Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header class="header">
-  <nav class="nav container">
-    <div class="logo">DJ</div>
-    <a href="#contact" class="btn btn-primary">Contact</a>
-  </nav>
-</header>
+  <header>
+    <nav class="container nav">
+      <div class="logo">DJ</div>
+      <a href="#contact" class="btn btn-primary">Contact Me</a>
+    </nav>
+  </header>
 
-<main class="container main-content">
-  <section class="hero">
-    <h1>Hi, I'm <span class="highlight">Dustin Jones</span></h1>
-    <p>Front-end developer crafting clean, accessible, and modern websites.</p>
-    <a href="#projects" class="btn btn-secondary">View Projects</a>
-  </section>
+  <main class="container">
+    <section class="hero" id="hero">
+      <h1>Hi, I'm <span class="highlight">Dustin Jones</span></h1>
+      <h2><span id="typed-text"></span><span class="cursor">|</span></h2>
+      <p>I build fast, responsive, and accessible websites to help your business grow.</p>
+      <a href="#projects" class="btn btn-secondary">View My Work</a>
+    </section>
 
-  <section id="projects" class="projects">
-    <h2>Featured Projects</h2>
-    <div class="project-list">
-      <article class="project-card">
-        <h3>Tribute Page</h3>
-        <p>A simple, responsive tribute page built with HTML and CSS.</p>
-        <a href="#" target="_blank" class="btn-link">See Live</a>
-      </article>
-      <article class="project-card">
-        <h3>Survey Form</h3>
-        <p>A clean survey form with accessible design and responsive layout.</p>
-        <a href="#" target="_blank" class="btn-link">See Live</a>
-      </article>
-    </div>
-  </section>
+    <section id="skills" class="skills">
+      <h2>My Skills</h2>
+      <div class="skill">
+        <div class="skill-name">HTML</div>
+        <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+      </div>
+    </section>
 
-  <section id="contact" class="contact">
-    <h2>Get In Touch</h2>
-    <p>Email: <a href="mailto:dustinjones424@gmail.com">dustinjones424@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
-  </section>
-</main>
+    <section id="projects" class="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-list">
+        <article class="project-card">
+          <h3>Tribute Page</h3>
+          <p>A responsive tribute page built with HTML and CSS.</p>
+          <a href="#" target="_blank" class="btn-link">See Live</a>
+        </article>
+        <article class="project-card">
+          <h3>Survey Form</h3>
+          <p>A clean, accessible survey form with responsive design.</p>
+          <a href="#" target="_blank" class="btn-link">See Live</a>
+        </article>
+      </div>
+    </section>
 
-<footer class="footer">
-  <p>&copy; 2025 Dustin Jones</p>
-</footer>
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dustin Jones</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
