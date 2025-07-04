@@ -1,40 +1,125 @@
+/* Import the font in case link fails */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  font-family: 'Inter', Arial, sans-serif;
   margin: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #f5f7fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 header {
-  background: #333;
+  background-color: #1e293b;
   color: white;
-  text-align: center;
-  padding: 2rem 1rem;
+  padding: 1.5rem 0;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+nav {
+  margin-top: 0.5rem;
 }
 
 nav a {
-  margin: 0 1rem;
-  color: #f0f0f0;
+  color: #94a3b8;
   text-decoration: none;
+  margin-right: 1.5rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
-section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+nav a:hover {
+  color: #60a5fa;
 }
 
-.project {
-  background: #fff;
-  padding: 1rem;
-  border: 1px solid #ddd;
+main {
+  padding: 2rem 0;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-weight: 700;
+  border-bottom: 3px solid #60a5fa;
+  padding-bottom: 0.3rem;
   margin-bottom: 1rem;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #333;
+.projects-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 250px;
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #1e293b;
+}
+
+.project-card p {
+  flex-grow: 1;
+  color: #475569;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #2563eb;
   color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1d4ed8;
+}
+
+section#contact a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+section#contact a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #1e293b;
+  color: #94a3b8;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
 }
